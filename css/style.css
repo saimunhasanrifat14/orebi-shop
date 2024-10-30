@@ -1,0 +1,53 @@
+:root {
+    /* font related custom properties */
+    --primary-font-family: "DM Sans", sans-serif;
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+    /* color related custom properties */
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-one: #d8d8d8;
+    --color-two: #f5f5f3;
+    --color-three: #f3f3f3;
+    --color-four: #6d6d6d;
+    --color-five: #767676;
+    --color-six: #262626;
+}
+/***** common css start *****/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+body {
+    font-family: var(--primary-font-family);
+    font-weight: var(--font-regular);
+    font-size: 16px;
+    color: var(--color-six);
+}
+/***** common css end *****/
+/* ***** REUSEABLE STYLES START ***** */
+.btnPrimary {
+    color: var(--color-light);
+    background-color: var(--color-six);
+    font-family: var(--primary-font-family);
+    font-weight: var(--font-bold);
+    padding: 16px 56px;
+    border: none;
+}
+/* ***** REUSEABLE STYLES END ***** */
