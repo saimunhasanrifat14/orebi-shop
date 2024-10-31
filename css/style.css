@@ -318,3 +318,51 @@ body {
     margin: 0;
   }
 /*************** project ***************/
+
+/* ***** footer part ***** */
+footer {
+  background-color: var(--color-two);
+  padding: 55px 0 59px 0;
+}
+.footerItem h3 {
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  color: var(--color-six);
+  margin-bottom: 17px;
+}
+.footerItemMenu {
+  list-style: none;
+  padding: 0;
+}
+.footerItemMenu li a {
+  color: var(--color-four);
+  font-size: 14px;
+}
+.footerItemMenu li a:hover {
+  font-weight: var(--font-bold);
+  color: var(--color-six);
+}
+.footerItemAddress a {
+  color: var(--color-six);
+  font-weight: var(--font-bold);
+}
+.footerItemAddress p {
+  color: var(--color-four);
+  font-size: 14px;
+  margin-top: 15px;
+}
+.footerBottom__icon {
+  margin-top: 50px;
+}
+.footerBottom__icon a {
+  color: var(--color-six);
+  font-size: 18px;
+}
+.footerBottom__icon a:hover {
+  transform: scale(1.3);
+}
+.footerItem__copyright {
+  color: var(--color-four);
+  margin-bottom: 0;
+}
+/* ***** footer part ***** */
