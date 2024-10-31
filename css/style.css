@@ -19,6 +19,7 @@
     --color-four: #6d6d6d;
     --color-five: #767676;
     --color-six: #262626;
+    --color-seven: #C4C4C4;
 }
 /***** common css start *****/
 *,
@@ -51,10 +52,98 @@ body {
     border: none;
 }
 /* ***** REUSEABLE STYLES END ***** */
+.subNav {
+  background-color: var(--color-two);
+  margin-bottom: 120px;
+}
+.subNav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.subNavFilter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subNavFilter__icon i {
+  vertical-align: middle;
+}
+
+/* SUB NAVBAR START */
+.subNavSearch {
+  width: 600px;
+  height: 36px;
+  display: flex;
+}
+
+.subNavSearchTerm {
+  width: 100%;
+  height: 36px;
+  border: 3px solid transparent;
+  border-right: none;
+  padding: 5px 10px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: var(--color-six);
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-regular);
+  font-size: 14px;
+  background-color: var(--color-light);
+}
+
+.subNavSearchTerm:focus{
+  color: inherit;
+}
+
+.subNavSearchTerm::placeholder {
+  color: var(--color-seven);
+}
+
+.subNavSearchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid transparent;
+  background: var(--color-light);
+  text-align: center;
+  color: var(--color-six);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subNavUtility {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.subNavUtility__icon--login {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.subNavUtility__icon--shopping i {
+  transform: translateY(1px);
+}
+/* SUB NAVBAR END */
 
 /*************** project ***************/
 #projectPart{
-  padding: 120px 0 140px 0;
+  padding: 0 0 140px 0;
 }
 .projectArea__heading{
   margin-bottom: 130px;
